@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube Search Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.fancybox.css">
+    <link rel="stylesheet" href="jquery.fancybox.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Make sure jQuery file is before the script file-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="jquery.fancybox.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.fancybox').fancybox();
+      });
+    </script>
+  </head>
+  <body>
+
+    <div id="formContainer">
+
+      <header>
+        <h1>Sasta<span>YouTube</span></h1>
+        <p>Search YouTube videos</p>
+      </header>
+
+      <section id="search-section">
+        <form id="search-form" name="search-form" onsubmit="return search()">
+          <div class="fieldContainer">
+            <input type="search" id="query" class="search-field" placeholder="Search YouTube...">
+            <input type="submit" name="search-btn" id="search-btn" value="">
+          </div>
+        </form>
+      </section>
+      </div>
+
+      <div id="container">
+        <section>
+          <ul id="results"></ul>
+
+          <div id="buttons"></div>
+
+        </section>
+
+        <footer>
+          <p>Copyright &copy; 2020, All Rights Reserved.</p>
+        </footer>
+    </div>
+
+  </body>
+</html>
